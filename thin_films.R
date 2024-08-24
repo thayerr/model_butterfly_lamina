@@ -109,7 +109,7 @@ ggplot(data=model_reflectance, aes(x=lambda, y=mean, ymin=min, ymax=max)) +
   # (calculating reflectance off of films with a uniform thickness of d_mu+ 1 standard deviation, and separately for a film with d_mu - 1 standard deviation), 
   # we assume that one single scale lamina has a variable thickness with average d_mu and d_sigma
 # May run slowly
-# similar to Siddique 2016 and Stavenga 2014 figure 4
+# similar to Siddique 2016 and Stavenga 2014 "Coloration principles of nymphaline butterflies..." figure 4
 
 # first, generate a list of thickness by drawing 400 randomized values from the thickness distribution defined by the empirically measured mu and sigma
 d_Gaus <- rnorm(400, d_mu, d_sigma) #n, d_mu, d_sigma
